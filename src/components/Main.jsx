@@ -1,35 +1,37 @@
 import Link from 'next/link'
-import { Box, Image, Text, Heading } from '@chakra-ui/react'
+import { Box, Image, Text, Heading, SimpleGrid } from '@chakra-ui/react'
+import Typical from 'react-typical' 
+import {FaTwitter} from 'react-ic'
+
 
 
 function Main() {
     return (
-        <Box display="flex" justifyContent="space-around" my={20} width="100%">
-            <Image
-                borderRadius="full"
-                border="2px solid #ff007f"
-                boxSize="400px"
-                objectFit="cover"       
-                src="https://res.cloudinary.com/bint/image/upload/v1606219072/profile_wb8ne1.jpg"
-                alt="Bint Muhd"
-                
-            />
-            <Box width="30%" display="flex" my={30} flexDirection="column" color="#ff007f">
-                 <Heading textAlign="center" fontSize="7xl">
-                    Hello, I'm Bint Muhd
-                </Heading>
-                <Text textAlign="center" my={10} fontSize="2xl"> I am a Front-end Developer in Abuja, Nigeria</Text>
-                <Box display="flex" flexWrap="wrap" width="18%" justifyContent="center" border="2px solid white" >
-                <Link href="/"><a>IN</a></Link>
-                <Link href=""><a>GI</a></Link>
-                <Link href=""><a>TW</a></Link>
-                <Link href=""><a>LI</a></Link>
-                <Link href=""><a>CO</a></Link>
-                <Link href=""><a>MI</a></Link>
+        <>
+            <Box display="flex" justifyContent="space-around" height="80%" alignItems="center" px="40">
+            <Box display="flex" justifyContent="center" flexDirection="column" alignItems="center">  
+            <Image src="https://res.cloudinary.com/bint/image/upload/v1606219072/profile_wb8ne1.jpg" w="90%" borderRadius="full" border="3px solid #d3b59c"/>
+             <Text display="flex" justifyContent="center" fontSize="3xl" fontWeight="900" color="#d3b59c">
+                <Typical
+                steps={['Writer ✍', 2000, 'Developer 💻', 2000, 'Code Tutor 🎓', 2000]}
+                loop={Infinity}
+                wrapper="p"
+                />
+            </Text>
+
+                </Box> 
+                <Box pb="10%" color="#d3b59c">
+                    <Heading fontSize="5xl">Hi! I am Bint Muhd</Heading>
+                    <Text fontSize="lg">I am a Front-End Developer based in Abuja, Nigeria</Text>
+                </Box>
+                <SimpleGrid>
+                    
+                </SimpleGrid>
             </Box>
-            </Box>   
             
-        </Box>
+        
+        </>
+        
     )
 }
 

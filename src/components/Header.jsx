@@ -1,5 +1,4 @@
 import { Box, Image, Text, Heading } from '@chakra-ui/react'
-import Typical from 'react-typical'
 
 
 function Header() {
