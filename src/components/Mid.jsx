@@ -1,4 +1,4 @@
-import { Box, Image, Text, Heading } from '@chakra-ui/react'
+import { Box,Text, Heading } from '@chakra-ui/react'
 
 function Mid() {
     return (
