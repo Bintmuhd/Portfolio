@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import { Box, Image, Text, Heading } from '@chakra-ui/react'
+import { Box} from '@chakra-ui/react'
 import Nav from '../src/components/Nav'
 import Main from '../src/components/Main'
 import Mid from '../src/components/Mid'
-import Footer from '../src/components/Footer'
+
+
 
 import styles from '../styles/Home.module.css'
 
@@ -17,7 +18,7 @@ export default function Home() {
       <Box h="100vh" bg=" #fff8df">
         <Nav />
         <Main/>
-        
+        <Mid/>
      </Box>
 
       </>
