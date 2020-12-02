@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Image, Text, Heading } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 
 
 function Footer() {
