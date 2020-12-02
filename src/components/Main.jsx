@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { Box, Image, Text, Heading, SimpleGrid } from '@chakra-ui/react'
 import Typical from 'react-typical' 
-import {FaTwitter} from 'react-ic'
 
 
 
