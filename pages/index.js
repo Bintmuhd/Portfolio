@@ -17,8 +17,7 @@ export default function Home() {
       <Box h="100vh" bg=" #fff8df">
         <Nav />
         <Main/>
-        <Mid />
-        <Footer/>
+        
      </Box>
 
       </>
