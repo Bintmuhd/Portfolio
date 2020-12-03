@@ -1,6 +1,5 @@
 import { Box, Image, Text, Heading } from '@chakra-ui/react'
 
-
 function Header() {
 
 
